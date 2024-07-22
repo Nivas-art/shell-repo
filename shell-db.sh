@@ -1,6 +1,6 @@
 #!bin/bash
 
-source ./common.sh
+source ./commann.sh
 FUNCTION
 
 dnf install mysql-server -y &>>$LOGFILE
