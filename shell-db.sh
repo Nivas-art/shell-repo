@@ -3,6 +3,9 @@
 source ./commann.sh
 FUNCTION
 
+echo "please enter a pwd"
+read sql_root_pwd
+
 dnf install mysql-server -y &>>$LOGFILE
 #VALIDATE $? "install of mysql serever is"
 
