@@ -50,7 +50,7 @@ systemctl enable backend &>>$LOGFILE
 dnf install mysql -y &>>$LOGFILE
 #VALIDATE $? "installing client sql"
 
-mysql -h 172.31.85.59 -uroot -p${sql_root_pwd} < /app/schema/backend.sql &>>$LOGFILE
+mysql -h 172.31.85.59 -uroot -p$ExpenseApp@1 < /app/schema/backend.sql &>>$LOGFILE
 #VALIDATE $? "schema added"
 
 systemctl restart backend &>>$LOGFILE
