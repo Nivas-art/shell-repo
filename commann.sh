@@ -19,7 +19,7 @@ read sql_root_pwd
 FUNCTION(){
 if [ $USERID -ne 0 ]
 then
-    echo "your not in root user"
+    echo "your not in roott user"
     exit 1
 else
     echo "your in root userr"

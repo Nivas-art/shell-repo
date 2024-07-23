@@ -21,5 +21,5 @@ then
     mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
     #VALIDATE $? "pwd of sql is"
 else
-    echo -e "pwd already setiped....$G SKIPPING $N"
+    echo -e "pwd already setapped....$G SKIPPING $N"
 fi 
