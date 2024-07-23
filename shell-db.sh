@@ -15,7 +15,7 @@ systemctl start mysqld &>>$LOGFILE
 #mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
 #VALIDATE $? "pwd of mysql is"
 
-mysql -h 18.207.1.187 -uroot -pExpenseApp@1 -e 'show databases;' &>>$LOGFILE
+mysql -h 54.159.226.223 -uroot -pExpenseApp@1 -e 'show databases;' &>>$LOGFILE
 if [ $? -ne 0 ]
 then 
     mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
