@@ -33,7 +33,7 @@ unzip /tmp/backend.zip &>>$LOGFILE
 #VALIDATE $? "unzipped file"
 
 npm install &>>$LOGFILE
-VALIDATE $? "installed dependencies"
+#VALIDATE $? "installed dependencies"
 
 cp /home/ec2-user/shell-repo/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 #VALIDATE $? "copied db details"
